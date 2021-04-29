@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>All Students</h1>
+
+<ul>
+    {% for student in students %}
+    <li><a href="/student/{{ student["name"] }}">{{ student["name"] }} - {{ student["grade"] }}</a></li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>
